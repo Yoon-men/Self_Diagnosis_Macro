@@ -1,4 +1,5 @@
 # Self_Diagnosis_Macro
+![image](https://user-images.githubusercontent.com/64591335/143431001-33b1b53e-34bf-40ee-95ae-c51667289c9f.png)
 > ??? : 가상 키패드를 적용하면 매크로 등 자동화 프로그램을 방지할 수 있습니다.
 ---
 ## What the fuck is this?
