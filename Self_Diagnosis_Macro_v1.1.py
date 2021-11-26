@@ -152,4 +152,4 @@ for i in range(0, user_num) :
 
 
 
-# driver.close()
+driver.close()
