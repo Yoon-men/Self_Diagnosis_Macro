@@ -116,9 +116,13 @@ def diagnosis() :
     time.sleep(1)
     driver.find_element_by_xpath('//*[@id="container"]/div/section[2]/div[2]/ul/li/a/span[1]').click()      # 참여자 목록 클릭
     driver.find_element_by_xpath('//*[@id="survey_q1a1"]').click()                                  # 1번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="survey_q2a1"]').click()                                  # 2번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="survey_q3a1"]').click()                                  # 3번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="survey_q4a1"]').click()                                  # 4번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="btnConfirm"]').click()                                   # '제출' 버튼 클릭
     print('\n[system] 자가진단이 완료되었습니다.')
     # ----------------------------------------------------------------------------------------------------
