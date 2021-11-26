@@ -117,6 +117,7 @@ for i in range(0, user_num) :
     try :                                                                   # 입력 시간 제한으로 인한 작동 멈춤 방지
         while True : 
             PW_input()
+            time.sleep(0.2)
             driver.switch_to_alert
             Alert(driver).accept()
     except NoAlertPresentException :
