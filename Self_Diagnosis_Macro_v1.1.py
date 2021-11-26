@@ -20,13 +20,13 @@ import csv
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support.ui import Select
 
-chrome_place = '(Chrome.exe가 있는 곳)'
+chrome_place = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 
 
 
 # ----------------------------------------------------------------------------------------------------
 """CSV 읽기"""
-f = open(r'user.csv가 있는 곳', 'r', encoding = 'utf-8')
+f = open(r'D:\윤태영\Programming\프로젝트\2077_(01) 매크로 프로젝트\[EXTRA EDITION]\Self_Diagnosis_Macro\v1.1\user.csv', 'r', encoding = 'utf-8')
 user_csv = csv.reader(f)
 user_info = []
 user_num = 0
@@ -120,10 +120,15 @@ for i in range(0, user_num) :
     """자가진단"""
     time.sleep(1)
     driver.find_element_by_xpath('//*[@id="container"]/div/section[2]/div[2]/ul/li/a/span[1]').click()      # 참여자 목록 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="survey_q1a1"]').click()                                          # 1번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="survey_q2a1"]').click()                                          # 2번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="survey_q3a1"]').click()                                          # 3번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="survey_q4a1"]').click()                                          # 4번 아니요 클릭
+    time.sleep(0.2)
     driver.find_element_by_xpath('//*[@id="btnConfirm"]').click()                                           # '제출' 버튼 클릭
     time.sleep(0.5)
     # ----------------------------------------------------------------------------------------------------
@@ -147,4 +152,4 @@ for i in range(0, user_num) :
 
 
 
-# driver.close()
+driver.close()
