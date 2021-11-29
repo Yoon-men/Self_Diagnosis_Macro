@@ -13,20 +13,18 @@ import chromedriver_autoinstaller
 import subprocess
 import shutil
 from selenium.common.exceptions import ElementNotInteractableException, NoSuchElementException, NoAlertPresentException
-import pyautogui
-pyautogui.PAUSE = 0.5
 import time
 import csv
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support.ui import Select
 
-chrome_place = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
+chrome_place = '(chrome.exe가 있는 곳)'
 
 
 
 # ----------------------------------------------------------------------------------------------------
 """CSV 읽기"""
-f = open(r'D:\윤태영\Programming\프로젝트\2077_(01) 매크로 프로젝트\[EXTRA EDITION]\Self_Diagnosis_Macro\v0 - Start up\user.csv', 'r', encoding = 'utf-8')
+f = open(r'(user.csv가 있는 곳)', 'r', encoding = 'utf-8')
 user_csv = csv.reader(f)
 user_info = []
 user_num = 0
