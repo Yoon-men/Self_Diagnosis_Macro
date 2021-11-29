@@ -13,8 +13,6 @@ import chromedriver_autoinstaller
 import subprocess
 import shutil
 from selenium.common.exceptions import ElementNotInteractableException, NoSuchElementException
-import pyautogui
-pyautogui.PAUSE = 0.5
 import time
 import csv
 from selenium.webdriver.common.alert import Alert
