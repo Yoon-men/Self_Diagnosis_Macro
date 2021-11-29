@@ -39,7 +39,7 @@ while time.time() <= detection_end :        # 30초 이내로 사용자 동작 �
 
 # ----------------------------------------------------------------------------------------------------
 """CSV 읽기"""
-f = open(r'D:\윤태영\Programming\프로젝트\2077_(01) 매크로 프로젝트\[EXTRA EDITION]\Self_Diagnosis_Macro\v0 - Start up\user.csv', 'r', encoding = 'utf-8')
+f = open(r'(user.csv가 있는 곳)', 'r', encoding = 'utf-8')
 user_csv = csv.reader(f)
 user_info = []
 user_num = 0
@@ -166,12 +166,13 @@ for i in range(0, user_num) :
 
 driver.close()
 
-# [사용법] ToastNotifier().show_toast(title, notification message, duration{seconds}, icon)
-ToastNotifier().show_toast('자가진단 매크로', '자가진단이 완료되었습니다.', duration=60, icon_path=r'D:\윤태영\Programming\프로젝트\2077_(01) 매크로 프로젝트\[EXTRA EDITION]\Self_Diagnosis_Macro\v1.3\diagnosis.ico')
-
 
 
 # ----------------------------------------------------------------------------------------------------
-if user_status == 0 : 
-    os.system('shutdown -f -s -t 30')
+"""각 상태별 결과"""
+if user_status == 0 :       # 사용자가 오프라인 상태일 경우
+    ToastNotifier().show_toast('자가진단 매크로', '자가진단이 완료되었습니다.\n곧 pc를 종료합니다.', duration=60, icon_path=r'(diagnosis.ico가 있는 곳)')
+    os.system('shutdown -f -s -t 0')
+elif user_status == 1 :         # 사용자가 온라인 상태일 경우
+    ToastNotifier().show_toast('자가진단 매크로', '자가진단이 완료되었습니다.', duration=60, icon_path=r'(diagnosis.ico가 있는 곳)')
 # ----------------------------------------------------------------------------------------------------
