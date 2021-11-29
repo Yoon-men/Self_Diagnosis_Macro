@@ -14,8 +14,6 @@ import shutil
 from selenium.common.exceptions import ElementNotInteractableException, NoSuchElementException
 import keyboard
 import sys
-import pyautogui
-pyautogui.PAUSE = 0.5
 import time
 
 try:
