@@ -172,7 +172,7 @@ driver.close()
 """각 상태별 결과"""
 if user_status == 0 :       # 사용자가 오프라인 상태일 경우
     ToastNotifier().show_toast('자가진단 매크로', '자가진단이 완료되었습니다.\n곧 pc를 종료합니다.', duration=60, icon_path=r'(diagnosis.ico가 있는 곳)')
-    os.system('shutdown -f -s -t 0')
+    os.system('shutdown -f -s -t 30')
 elif user_status == 1 :         # 사용자가 온라인 상태일 경우
     ToastNotifier().show_toast('자가진단 매크로', '자가진단이 완료되었습니다.', duration=60, icon_path=r'(diagnosis.ico가 있는 곳)')
 # ----------------------------------------------------------------------------------------------------
