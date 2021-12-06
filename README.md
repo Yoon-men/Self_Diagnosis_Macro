@@ -36,3 +36,6 @@ ToastNotifier().show_toast('자가진단 매크로', '자가진단이 완료되�
 
 ◇ 2021.12.5.일 00:51 // v1.4
 - StaleElementReferenceException 방지 기능 추가
+
+◇ 2021.12.6.월 09:40 // v1.5
+- 사용자 동작 감지 방식 변경
