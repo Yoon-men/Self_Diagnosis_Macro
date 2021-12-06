@@ -63,7 +63,7 @@ except:
     chromedriver_autoinstaller.install(True)
     driver = webdriver.Chrome(f'./{chrome_ver}/chromedriver.exe', options=option)
 
-driver.implicitly_wait(15)      # 페이지 로딩 20초 기다려준다. 20초 후에는 얄짤없다.
+driver.implicitly_wait(15)      # 페이지 로딩 15초 기다려준다. 15초 후에는 얄짤없다.
 
 # ====================================================================================================
 
