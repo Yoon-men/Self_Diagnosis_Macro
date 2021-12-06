@@ -29,11 +29,13 @@ option.add_argument('start-maximized')
 # ----------------------------------------------------------------------------------------------------
 """사용자 동작 감지"""
 a, b = pyautogui.position()
-time.sleep(30)
-c, d = pyautogui.position()
-if (a, b) != (c, d) :                       # 30초 이내로 사용자 동작(마우스 이동) 감지되면 headless 옵션 추가
-    option.add_argument('headless')
-    user_status = 1
+detection_end = time.time() + 30
+while time.time() <= detection_end :        # 30초 이내로 사용자 동작(마우스 이동) 감지되면 headless 옵션 추가
+    c, d = pyautogui.position()
+    if (a, b) != (c, d) : 
+        option.add_argument('headless')
+        user_status = 1
+        break
 # ----------------------------------------------------------------------------------------------------
 
 
