@@ -1,4 +1,4 @@
-![title](img/SDM_header2.jpg)
+![title](img/SDM_header.jpg)
 > 느슨해진 자가진단에 긴장감을 주는 프로그램
 ---
 # What the fuck is this?
