@@ -38,11 +38,11 @@ ToastNotifier().show_toast('자가진단 매크로', '자가진단이 완료되�
 - 사용자 상태 확인 기능 추가(Online = headless 옵션 추가 / Offline = 작업 후 pc 종료)
 
 ◇ 2021.12.5. (SUN) 00:51 // v1.4
-- StaleElementReferenceException 방지 기능 추가
+- StaleElementReferenceException 방지 기능 추가 (1차)
 
 ◇ 2021.12.6. (MON) 09:40 // v1.5
 - 사용자 동작 감지 방식 변경
 
 ◇ 2022.1.31. (MON) ??:?? // v1.6 (Will)
 - 자동으로 유저 데이터를 읽는 기능 추가
-- StaleElementReferenceException 방지 기능 추가 (1)
+- StaleElementReferenceException 방지 기능 추가 (2차)
