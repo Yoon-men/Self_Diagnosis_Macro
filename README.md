@@ -1,5 +1,10 @@
-![title](img/SDM_header.jpg)
+```
+Yoonmen의 고등학교 졸업 이슈로 인해 Self_Diagnosis_Macro의 업데이트가 중단되어 정상 작동을 보장할 수 없습니다.
 
+필요에 따라 추후에 업데이트 될 수도 있습니다.
+```
+
+![title](img/SDM_header.jpg)
 
 # What the fuck is this?
 > 느슨해진 자가진단에 긴장감을 주는 프로그램
